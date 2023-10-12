@@ -13,7 +13,7 @@ function Login() {
   };
   return (
     <div className="flex justify-center mb-5 mt-8">
-      <h2 className="text-xl text-center">Log In</h2>
+      <h2 className="text-xl text-center mr-5">Log In</h2>
       <input
         className="text-xl text-center "
         type="text"
@@ -24,7 +24,7 @@ function Login() {
         }}
       ></input>
       <input
-        className="text-xl text-center"
+        className="text-xl text-center ml-3"
         type="text"
         placeholder="password"
         value={password}
@@ -32,7 +32,7 @@ function Login() {
           setPassword(e.target.value);
         }}
       ></input>
-      <button onClick={handelsubmit}>Submit </button>
+      <button onClick={handelsubmit} className="ml-4">Submit </button>
     </div>
   );
 }
